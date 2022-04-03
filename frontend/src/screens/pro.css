@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+}
+
+#sidebar {
+    width: 60px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+#sidebar-collapsed {
+    width: 50px;
+    position: fixed;
+    top: 200px;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.OverlayBorder1 {
+    left: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  
+  .ImgContainer {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+
