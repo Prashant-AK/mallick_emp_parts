@@ -92,6 +92,10 @@ export function Nav1(props) {
                 <Link to='/admin/orderlist' className="nav-links" onClick={closeMobileMenu}><h5 style={{color:'#ffd700'}}>INVESTMENT MANAGER</h5></Link>
               </li>
 
+              <li className="nav-item" style={{color:'#ffd700' ,marginLeft:size.x * 0.03}}>
+                <Link to='/profile' className="nav-links" onClick={logoutHandler}><h5 style={{color:'#ffd700'}}>LOGOUT</h5></Link>
+              </li>
+
             </ul>
           </div>
         </nav>

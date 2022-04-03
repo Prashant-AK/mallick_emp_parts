@@ -6,6 +6,8 @@ import OrderListScreen from './screens/OrderListScreen'
 import "./App.css";
 import { Nav1 } from "./components/nav";
 import PacmanLoader from "react-spinners/RingLoader";
+import RegisterScreen from './screens/RegisterScreen'
+import LoginScreen from './screens/LoginScreen'
 
 
 
@@ -58,9 +60,11 @@ const App = () => {
       <div style={{padding: 30}}></div>
       <main className='py-3'>
         <Container>
+        <Route path='/login' component={LoginScreen} />
           <Route path='/admin/orderlist' component={OrderListScreen} />
           <Route path='/search/:keyword' component={HomeScreen} exact />
           <Route path='/page/:pageNumber' component={HomeScreen} exact />
+          <Route path='/register' component={RegisterScreen} />
           <Route
             path='/search/:keyword/page/:pageNumber'
             component={HomeScreen}
